@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writing — Beth</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-header {
+      padding: calc(var(--nav-height) + 5rem) 0 4rem;
+      border-bottom: 1px solid var(--grey-100);
+    }
+
+    .page-header-eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-bottom: 1.5rem;
+    }
+
+    .page-header h1 {
+      font-family: var(--serif);
+      font-size: clamp(2.8rem, 5vw, 4.2rem);
+      font-weight: 400;
+      line-height: 1.1;
+      margin-bottom: 1.25rem;
+    }
+
+    .page-header-desc {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 520px;
+      line-height: 1.7;
+    }
+
+    .essays-section {
+      padding: 4rem 0 6rem;
+    }
+
+    .essay-card {
+      display: block;
+      border-top: 1px solid var(--grey-100);
+      padding: 2.5rem 0;
+      transition: opacity 0.2s;
+    }
+
+    .essay-card:last-child {
+      border-bottom: 1px solid var(--grey-100);
+    }
+
+    .essay-card:hover {
+      opacity: 0.7;
+    }
+
+    .essay-card-inner {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .essay-number {
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      color: var(--sienna);
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .essay-card-title {
+      font-family: var(--serif);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+    }
+
+    .essay-card-excerpt {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      max-width: 540px;
+    }
+
+    .essay-card-arrow {
+      font-size: 1.5rem;
+      color: var(--grey-200);
+      padding-top: 0.5rem;
+      transition: color 0.2s, transform 0.2s;
+    }
+
+    .essay-card:hover .essay-card-arrow {
+      color: var(--sienna);
+      transform: translateX(4px);
+    }
+
+    @media (max-width: 560px) {
+      .essay-card-inner { grid-template-columns: 1fr; }
+      .essay-card-arrow { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="main-nav" class="scrolled">
+  <a href="/" class="nav-name">Beth</a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="writing.html" class="active">Writing</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+
+  <div class="page-header">
+    <div class="container">
+      <p class="page-header-eyebrow">Essays &amp; Ideas</p>
+      <h1>Writing</h1>
+      <p class="page-header-desc">
+        Essays on technology, moral philosophy, community, and the moments when they refuse to stay separate.
+      </p>
+    </div>
+  </div>
+
+  <div class="essays-section">
+    <div class="container">
+
+      <a href="writing/the-rupture.html" class="essay-card">
+        <div class="essay-card-inner">
+          <div>
+            <p class="essay-number">Essay 01</p>
+            <h2 class="essay-card-title">The Rupture</h2>
+            <p class="essay-card-excerpt">
+              On what it looks like when something fundamental breaks — in a system, in a community, in a self — and what the break makes visible that was always there.
+            </p>
+          </div>
+          <div class="essay-card-arrow">&rarr;</div>
+        </div>
+      </a>
+
+      <a href="writing/what-the-land-does.html" class="essay-card">
+        <div class="essay-card-inner">
+          <div>
+            <p class="essay-number">Essay 02</p>
+            <h2 class="essay-card-title">What the Land Does</h2>
+            <p class="essay-card-excerpt">
+              A meditation on place, rootedness, and what it means to be shaped by something that has no interest in shaping you — and does it anyway.
+            </p>
+          </div>
+          <div class="essay-card-arrow">&rarr;</div>
+        </div>
+      </a>
+
+      <a href="writing/the-transmission-problem.html" class="essay-card">
+        <div class="essay-card-inner">
+          <div>
+            <p class="essay-number">Essay 03</p>
+            <h2 class="essay-card-title">The Transmission Problem</h2>
+            <p class="essay-card-excerpt">
+              How do moral frameworks actually travel from person to person? What survives the crossing, what gets lost, and who bears the cost of the loss?
+            </p>
+          </div>
+          <div class="essay-card-arrow">&rarr;</div>
+        </div>
+      </a>
+
+      <a href="writing/campbells-question.html" class="essay-card">
+        <div class="essay-card-inner">
+          <div>
+            <p class="essay-number">Essay 04</p>
+            <h2 class="essay-card-title">Campbell&rsquo;s Question</h2>
+            <p class="essay-card-excerpt">
+              Joseph Campbell asked what myth we're living by. The question is sharper now. What happens when the story runs out before the people do?
+            </p>
+          </div>
+          <div class="essay-card-arrow">&rarr;</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="container">
+    &copy; 2025 Beth &mdash; All rights reserved
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) nav.classList.add('scrolled');
+    else nav.classList.add('scrolled');
+  });
+</script>
+
+</body>
+</html>

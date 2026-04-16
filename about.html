@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Beth</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-header {
+      padding: calc(var(--nav-height) + 5rem) 0 4rem;
+      border-bottom: 1px solid var(--grey-100);
+    }
+
+    .page-header-eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-bottom: 1.5rem;
+    }
+
+    .page-header h1 {
+      font-family: var(--serif);
+      font-size: clamp(2.8rem, 5vw, 4.2rem);
+      font-weight: 400;
+      line-height: 1.1;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 5rem;
+      padding: 5rem 0;
+      align-items: start;
+    }
+
+    .about-body p {
+      margin-bottom: 1.5rem;
+      line-height: 1.85;
+      color: var(--text-muted);
+    }
+
+    .about-body p:last-child { margin-bottom: 0; }
+
+    .about-body h2 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 1.35rem;
+      margin: 3rem 0 1rem;
+      color: var(--text);
+    }
+
+    .about-aside {
+      position: sticky;
+      top: calc(var(--nav-height) + 2rem);
+    }
+
+    .aside-block {
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--grey-100);
+    }
+
+    .aside-block:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .aside-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--sienna);
+      margin-bottom: 0.75rem;
+    }
+
+    .aside-block p,
+    .aside-block a {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .aside-block a {
+      display: block;
+      border-bottom: 1px solid var(--grey-100);
+      padding: 0.5rem 0;
+      transition: color 0.2s;
+    }
+
+    .aside-block a:first-of-type { border-top: 1px solid var(--grey-100); }
+    .aside-block a:hover { color: var(--sienna); }
+
+    .pullquote {
+      border-left: 3px solid var(--sienna);
+      padding-left: 1.75rem;
+      margin: 3rem 0;
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      font-style: italic;
+      line-height: 1.5;
+      color: var(--grey-700);
+    }
+
+    @media (max-width: 680px) {
+      .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .about-aside { position: static; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="main-nav" class="scrolled">
+  <a href="/" class="nav-name">Beth</a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="writing.html">Writing</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+
+  <div class="page-header">
+    <div class="container">
+      <p class="page-header-eyebrow">Who I am</p>
+      <h1>About</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-body">
+        <p>
+          I'm a writer, technologist, and sometime theologian thinking through what it means to act with integrity inside systems that weren't designed for it.
+        </p>
+        <p>
+          My background is in engineering leadership at a technology company. My education is in theological studies — specifically, how communities metabolize existentially threatening difference, and what enables them to survive it. I did not plan for those two things to converge. They did anyway.
+        </p>
+
+        <div class="pullquote">
+          The problem isn&rsquo;t that people are doing harm on purpose.<br>
+          It&rsquo;s that they&rsquo;re not stopping to ask.
+        </div>
+
+        <h2>On the work</h2>
+        <p>
+          The essays collected here are a record of that convergence. They move between AI, ethics, ecology, community, and the texture of ordinary moral life. They are not op-eds. They don't offer five-step frameworks. They are attempts to think seriously about things that resist easy resolution.
+        </p>
+        <p>
+          I'm particularly interested in the question Hannah Arendt raised about the "banality of evil" — not as a historical curiosity, but as a live description of how organizations make decisions today. The people causing harm in AI adoption are mostly not bad people. They are executing roles without pausing to interrogate what those roles are for.
+        </p>
+        <p>
+          Building the capacity for that interrogation — at the level of the person who has to make a call on a Tuesday afternoon — is the work I think matters most right now.
+        </p>
+
+        <h2>Background</h2>
+        <p>
+          I hold a master's degree in theological studies. My research drew on the work of Hannah Arendt, Marshall Ganz, and Samantha Power, among others, examining how moral frameworks travel (and break) across community contexts.
+        </p>
+        <p>
+          I live in Vermont with my daughter.
+        </p>
+      </div>
+
+      <aside class="about-aside">
+        <div class="aside-block">
+          <p class="aside-label">Writing</p>
+          <a href="writing/the-rupture.html">The Rupture</a>
+          <a href="writing/what-the-land-does.html">What the Land Does</a>
+          <a href="writing/the-transmission-problem.html">The Transmission Problem</a>
+          <a href="writing/campbells-question.html">Campbell&rsquo;s Question</a>
+        </div>
+        <div class="aside-block">
+          <p class="aside-label">Interests</p>
+          <p>AI ethics &amp; governance, community organizing theory, theological anthropology, ecology, the philosophy of technology.</p>
+        </div>
+        <div class="aside-block">
+          <p class="aside-label">Contact</p>
+          <p>beth@[yourdomain].com</p>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="container">
+    &copy; 2025 Beth &mdash; All rights reserved
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 10);
+    if (window.scrollY <= 10) nav.classList.add('scrolled');
+  });
+</script>
+
+</body>
+</html>
